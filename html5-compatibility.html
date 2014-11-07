@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+(function(){
+  if('querySelector' in document
+     && 'localStorage' in window
+     && 'addEventListener' in window) {
+    // Conditions for your HTML5 Application
+    alert('HTML5 supported');
+  } else {
+    //Start pouring Polyfills as 
+    alert('Using Browsers from Dinosaur Era doesn\'t really help :-\)');
+  }
+})();
+</script>
+</head>
+<body>
+</body>
+</html>
