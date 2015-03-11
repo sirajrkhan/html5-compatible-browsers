@@ -3,7 +3,7 @@
   <title>Check the HTML5 Compatibility of the client browser</title>
 </head>
 <body>
-<h2>Gateway for HTML5</h2>
+<h1>Gateway for HTML5</h1>
 <div id="msg"></div>
 <script>
 (function(){
@@ -11,14 +11,13 @@
      && 'localStorage' in window
      && 'addEventListener' in window) {
     // Conditions for your HTML5 Application
-    console.log('HTML5 supported');
-	document.getElementById("msg").innerHTML = "HTML supported";
+    //console.log('HTML5 supported');
+	document.getElementById("msg").innerHTML = "HTML5 supported in your Browser";
   } else {
     //Start pouring Polyfills
 	document.getElementById("msg").innerHTML = "Using Browsers from Dinosaur Era doesn\'t really help :-\)";
   }
 })();
-
 </script>
 </body>
 </html>
